@@ -1,0 +1,38 @@
+[
+    {
+        "EventName": "Anand Mela",
+        "EventDate": [7, 25],
+        "EventLocation":["15670 NE 85th St", "https://tinyurl.com/y8dtyp5f"],
+        "EventStartTime" : "12pm",
+        "EventEndTime" : "9pm",
+        "EventDescription" : "Festival where we discuss our religion, and participate in activities very close to our cultures. Join us in this two-day event where you can volunteer, get free delicious vegetarian food, dance, and watch mind-blowing performances.",
+        "id": 1
+    },
+    {
+        "EventName": "Anand Mela",
+        "EventDate": [7, 26],
+        "EventLocation": ["15670 NE 85th St","https://tinyurl.com/y8dtyp5f"],
+        "EventStartTime" : "12pm",
+        "EventEndTime" : "9pm",
+        "EventDescription" : "Festival where we discuss our religion, and participate in activities very close to our cultures. Join us in this two-day event where you can volunteer, get free delicious vegetarian food, dance, and watch mind-blowing performances.",
+        "id": 2
+    },
+    {
+        "EventName": "Boat Festival",
+        "EventDate": [3, 17],
+        "EventLocation": ["1420 228th Ave SE", "https://tinyurl.com/yd55dd4b"],
+        "EventStartTime" : "8am",
+        "EventEndTime" : "12:50pm",
+        "EventDescription": "Join us at out temple to celebrate in our Boat Festival as we dance, eat delicious food, and honor Krishna",
+        "id": 3
+    },
+    {
+        "EventName": "Food Truck",
+        "EventDate": [6, 13],
+        "EventLocation": ["1500 Harvard Avenue Seattle, WA 98122", "https://tinyurl.com/SeattleCollege"],
+        "EventStartTime" : "5pm",
+        "EventEndTime" : "7:30pm",
+        "EventDescription": "Join us at Seattle College where we serve free, vegetarian food to the homeless from our food truck",
+        "id": 4
+    }
+]
