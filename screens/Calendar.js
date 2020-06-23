@@ -1,34 +1,31 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 import VedicCalendarData from '../VedicCalendar.json';
+import HeaderDisplay from './HeaderDisplay';
 
-export default class Calendar extends Component{
-    constructor(){
+export default class Calendar extends Component {
+    constructor() {
         super();
         this.state = {
-            dayOfMonthStart: 0,
-            month: 0,
-            day: 0,
-            year: 0
-        };
+            currentMonth: new Date().getMonth(),
+            selectedDate: { date: new Date().getDate(), month: new Date().getMonth()},
+            startingDayOfMonth: new Date(new Date().getFullYear(), new Date().getMonth(), 1).getDay()
+        }
     }
-    componentDidMount(){
-        const date = new Date();
-        let month = date.getMonth();
-        let day = date.getDate();
-        let year = date.getFullYear();
-        const startingDate = new Date(year, month, 1);
-        this.setState({
-            dayOfMonthStart: startingDate.getDay(),
-            day: day,
-            month: month,
-            year: year
-        });
+    handleClick(clickedDay){
+        console.log(clickedDay);
     }
-    render(){
-        return(
+    render() {
+        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        
+        return (
             <View style={styles.container}>
-                <Text>{this.state.year}, {this.state.month}, {this.state.day}, {this.state.dayOfMonthStart}</Text>
+                <HeaderDisplay 
+                    month={this.state.currentMonth} 
+                    startingDayOfMonth={this.state.startingDayOfMonth} 
+                    selectedDate={this.state.selectedDate} 
+                    handleClick={this.state.handleClick} />
+                
             </View>
         )
     }
